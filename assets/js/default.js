@@ -74,7 +74,7 @@ var slickCarousel=$('.featured-carousel').slick({infinite:true,slidesToShow:5,sl
 function supDogTradeWidget()
 {if(!$('#rubic-widget-root').length){return false;}
 var style='horizontal';if(isMobile()){style='vertical';}
-var configuration={from:'ETH',to:'GROK',fromChain:'ETH',toChain:'ETH',amount:1,iframe:style,hideSelectionFrom:false,hideSelectionTo:true,theme:'dark',background:'#000',injectTokens:{bsc:['0x0000000000000000000000000000000000']}}
+var configuration={from:'ETH',to:'GROK',fromChain:'ETH',toChain:'ETH',amount:1,iframe:style,hideSelectionFrom:false,hideSelectionTo:true,theme:'dark',background:'#000',injectTokens:{bsc:['0x9C8f81D176fCf1E7bb47F6d2Cdc0CC24bB9233E7']}}
 if(rubicWidget.configuration.iframe!=style){rubicWidget.init(configuration);}}
 $(function(){slickCarousel();featuresCarousel();initWalletFunctions();initFingerprintJS();dynamicHeight();smoothScrollToDiv();copyToClipboard();offsetHeaderPlayer();supDogTradeWidget();$(window).resize(function(){dynamicHeight();fixCardContainerHeight();offsetHeaderPlayer();supDogTradeWidget();});textStrokes();hoverVideo();changeVideoTOGif();getTotalVotes();if(!$('.vote-btn').length){}
 shareModal();$('body').on('contextmenu','img, canvas',function(e){return false;});setTimeout(function(){var afterReveal=function(e){var elem=$(e);if(elem.data('after-reveal-class')){setTimeout(function(){elem.addClass(elem.data('after-reveal-class'));},1100);}
